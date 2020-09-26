@@ -8,13 +8,12 @@
 
 float sine(float x)
 {
-    int fact3 = 6;
+    int fact3 = 3*2*1;
     int fact5 = 5*4*3*2*1;
     int fact7 = 7*6*5*4*3*2*1;
     float val = x - (x*x*x)/fact3 + (x*x*x*x*x)/fact5 - (x*x*x*x*x*x*x)/fact7;
     return val;
 }
-
 
 int main()
 {   
