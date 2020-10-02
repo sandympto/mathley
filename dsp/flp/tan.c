@@ -71,12 +71,18 @@ float sine(float x)
     return val;
 }
 
-/* ATTENTION: THIS DOES NOT WORK YET */
+/*
 float tangent(float x)
 {
     float val = x + (x*x*x)/3 + ((x*x*x*x*x)*2)/15 + ((x*x*x*x*x*x*x)*17)/315
 	    + ((x*x*x*x*x*x*x*x*x)*62)/2835;
     return val;
+}
+*/
+
+float tangent(float x)
+{
+   return sine(x)/cosine(x);
 }
 
 int main()
@@ -85,7 +91,7 @@ int main()
     float PI = 3.14;
     while(f < 2*PI)
     {
-        float val = sine(f)/cosine(f);
+        float val = tangent(f);
         printf("%f ", val);
         f = f + 0.01;	
     }
