@@ -1,7 +1,8 @@
 /******************************************************************************
  * filename : arctan.c
  * author   : Sandeep Tayal
- * email    : sandympto@gmail.com 
+ * email    : sandympto@gmail.com
+ * note     : this function works only when |x| < 1 
  *****************************************************************************/
 
 #include <stdio.h>
